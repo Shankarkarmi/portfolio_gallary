@@ -7,7 +7,7 @@
 }
 body{
     font-family: 'Bodoni Moda', serif;
-    font-size: 1.2rem;
+    font-size: 0.5rem;
 }
 .container{
     height: 100vh;
@@ -61,4 +61,16 @@ body{
           background-color: #999;
           background-position: center;
           box-shadow: 0 0 4px #fff;
+}
+@media (max-width:320px) {
+    .container{
+        padding: 3vh 4vh;
+        display: flex;
+        flex-direction: column;
+        background:linear-gradient(to buttom right,#041308,#0b3317);
+        align-content: center;
+    }
+    .heading{
+        font-size: 2rem;
+    }
 }
