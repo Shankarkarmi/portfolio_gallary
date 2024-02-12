@@ -10,7 +10,7 @@ body{
     font-size: 1.2rem;
 }
 .container{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: space-evenly;
     align-items:center;
@@ -62,15 +62,23 @@ body{
           background-position: center;
           box-shadow: 0 0 4px #fff;
 }
-@media (max-width:320px) {
-    .container{
-        padding: 3vh 4vh;
-        display: flex;
-        flex-direction: column;
-        background:linear-gradient(to buttom right,#041308,#0b3317);
-        align-content: center;
+@media (max-width:500px) {
+    body{
+        font-size: 0.5rem;
     }
-    .heading{
-        font-size: 2rem;
+    .container{
+    flex-direction: column;
+    padding-block: 20px;
+    }
+    
+    .gallary{
+       width: 100%;
+       padding-inline: 12px;
+       grid-auto-rows: 220px;
+       
+    }
+    .box{
+        grid-row: span 1;
+        grid-column: span 3;
     }
 }
